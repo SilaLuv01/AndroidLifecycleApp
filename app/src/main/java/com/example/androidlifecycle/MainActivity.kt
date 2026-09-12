@@ -30,4 +30,13 @@ class MainActivity : ComponentActivity() {
             Toast.LENGTH_SHORT
         ).show()
     }
+    override fun onResume() {
+        super.onResume()
+
+        Toast.makeText(
+            applicationContext,
+            "onResume()",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
 }
