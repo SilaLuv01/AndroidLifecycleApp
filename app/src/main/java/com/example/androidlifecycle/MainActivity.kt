@@ -21,4 +21,13 @@ class MainActivity : ComponentActivity() {
             Text("Android Lifecycle")
         }
     }
+    override fun onStart() {
+        super.onStart()
+
+        Toast.makeText(
+            applicationContext,
+            "onStart()",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
 }
